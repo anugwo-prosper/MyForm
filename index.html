@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
+</head>
+<body onload="readAll()">
+   <div class="container">
+        <div class="form_container">
+            <form action="" class="create_form">
+                <input type="text" placeholder="Enter your name" class="name">
+                <input type="text" placeholder="enter your email" class="email">
+
+                <button type="button" onclick="myadd()">Create</button>
+            </form>
+
+            <form action="" class="update_form">
+              <input type="text" hidden placeholder="Enter your name" class="uid">
+                <input type="text" placeholder="Enter your name" class="uname">
+                <input type="text" placeholder="enter your email" class="uemail">
+                <button type="button" onclick=" myupdate()">Update</button> 
+            </form>
+            <div class="add_div">
+                <button onclick="mycreate()">Add+</button>
+            </div>
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </thead>
+                <tbody class="data_table">
+
+                </tbody>
+            </table>
+        </div>
+
+
+   </div>
+
+ 
+    
+
+</body>
+<script src="./class.js"></script>
+</html>
